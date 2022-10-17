@@ -1,0 +1,77 @@
+{
+  "status": true,
+  "message": "Successful",
+  "tenantID": "cust_54b865b8_5123_461a_accf_d12ed01ce383",
+  "dynamiclist": [
+    {
+      "dynamicListId": 106,
+      "dynamicListName": "Abandon Cart_Live_12Jul21",
+      "campaignId": 2541,
+      "isFrequencyEnabled": true,
+      "ruleCondition": "AND",
+      "ruleGroups": [
+        {
+          "anyCount": "1",
+          "ruleType": "All",
+          "triggerSource": "5",
+          "rules": [
+            {
+              "ruleName": "Custom events",
+              "isMandatory": false,
+              "value": "Test_Rule",
+              "compareValue": "="
+            },
+            {
+              "ruleName": "App Opened",
+              "isMandatory": false,
+              "value": "Yes",
+              "compareValue": "="
+            }
+          ]
+        },
+        {
+          "anyCount": "1",
+          "ruleType": "All",
+          "triggerSource": "14",
+          "rules": [
+            {
+              "ruleName": "Age",
+              "dataType": "NR",
+              "isMandatory": false,
+              "compareValue": "<",
+              "value": "10"
+            },
+            {
+              "ruleName": "Credit_Card_Limit",
+              "dataType": "D",
+              "isMandatory": false,
+              "compareValue": "=",
+              "value": "100"
+            },
+            {
+              "ruleName": "Credit_Card_Eligibility",
+              "dataType": "D",
+              "isMandatory": false,
+              "compareValue": "=",
+              "value": "Y:@@;10"
+            },
+            {
+              "ruleName": "MDC_Policy_Expiry_Date",
+              "dataType": "AN",
+              "isMandatory": false,
+              "compareValue": "+",
+              "value": "3"
+            },
+            {
+              "ruleName": "Name",
+              "dataType": "D",
+              "isMandatory": false,
+              "compareValue": "=",
+              "value": "Buvanesh:@@;20,Dinesh:@@;30"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
